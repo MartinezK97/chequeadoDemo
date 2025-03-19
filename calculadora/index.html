@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chequeado.uy - Calculadora Financiera</title>
+    <meta id="theme-color-meta" name="theme-color" content="">
+    <link rel="icon" href="URL/resource/img/logo_c.svg" type="image/svg+xml">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link rel='stylesheet' href='../resource/css/default.css'>
+    <link rel='stylesheet' href='../resource/css/modals.css'>
+    <link rel='stylesheet' href='../resource/css/menu.css'>
+    <link rel='stylesheet' href='../resource/css/header.css'>
+
+</head>
+
+<body>
+    <section class="header gc-1-3 gar-min blur-15 ac-center">
+        <a href="./" class="descontado maxw-min as-center fz-2">
+            <i class="company_icon"></i>
+            <span class="color">Chequeado</span>.uy
+        </a>
+        <section class="dg gtc-4 maxw-min gg-1 mar-a-0-a-a menu-header">
+            <a href="https://MartinezK97.github.io/chequeadoHome/"
+                class="ac-center border-bm-3 color-primary fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
+                alt="Página de inicio"><i class="as-center fa fa-home"></i> Inicio</a>
+            <a href="https://MartinezK97.github.io/chequeadoHome/acceder/"
+                class="ac-center border-bm-3  fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
+                alt="Acceder a la plataforma"><i class="as-center fa fa-user"></i> Acceder</a>
+            <a href="https://MartinezK97.github.io/chequeadoHome/calculadora/"
+                class="ac-center border-bm-3  fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
+                alt="Calculadora financiera"><i class="as-center fa fa-calculator"></i> Calculadora</a>
+            <a href="#footer" class="ac-center border-bm-3 fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
+                alt="Contactos"><i class="as-center fa fa-envelope"></i> Contactos</a>
+
+        </section>
+
+    </section>
+    <section class="menu hide minw-max maxw-max" id="menu">
+        <a href="https://MartinezK97.github.io/chequeadoHome/" class="link pad-05 minw-max dg gtc-1_5-a"><i
+                class="fa fa-home"></i> Inicio</a>
+        <a href="https://MartinezK97.github.io/chequeadoHome/acceder/" class="link pad-05 minw-max dg gtc-1_5-a"><i
+                class="fa fa-sign-in"></i>
+            Acceder</a>
+        <a href="https://MartinezK97.github.io/chequeadoHome/registrarme/" class="link pad-05 minw-max dg gtc-1_5-a"><i
+                class="fa fa-user-plus"></i>
+            Registrarme</a>
+        <a href="https://MartinezK97.github.io/chequeadoHome/calculadora/" class="link pad-05 minw-max dg gtc-1_5-a"><i
+                class="fa fa-calculator"></i>
+            Calculadora</a>
+    </section>
+    <section class="content-menu-btn">
+
+
+        <a target="_blank" href="https://wa.me/+59898760446" class="btn-wpp "><i class="fab fa-whatsapp "></i><span
+                class="btn-desc color-green">WhatsApp</span></a>
+
+        <button class="menu-btn"><i class="fa fa-bars"></i><span class="btn-desc color-primary">Menú</span></button>
+        <a href="https://MartinezK97.github.io/chequeadoHome/acceder/" class="btn-new-check openModal" rel="login"><i
+                class=" fa fa-sign-in fz-2"></i><span class="btn-desc color-primary">Acceder</span></a>
+
+    </section>
+    <div class="content-all">
+        <div class="dg gtc-2 box-bg-t1 pad-05-1 br-10 border-light gg-10">
+            <div class="fz-1-25 gc-1-3 mar-tp-05 mar-bm-05 border-bm-light pad-bm-05 mar-bm-05 color-primary fw-6">
+                Calcular TIR</div>
+            <div class="celda border-bm-light ">
+                <span class="color-placeholder fz-09">Fecha de compra</span>
+                <input type="date" name="" id="calc_tir_buy_date" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light ">
+                <span class="color-placeholder fz-09">Vencimiento</span>
+                <input type="date" name="" id="calc_tir_expired" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light gc-1-3">
+                <span class="color-placeholder fz-09">Diferencia en días</span>
+                <input type="number" name="" id="calc_tir_days" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light ">
+                <span class="color-placeholder fz-09">Valor</span>
+                <input type="number" name="" id="calc_tir_value" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light  ">
+                <span class="color-placeholder fz-09">Precio</span>
+                <input type="number" name="" id="calc_tir_buy" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light  ">
+                <span class="color-placeholder fz-09">Comisión (%)</span>
+                <input type="number" name="" id="calc_tir_comission" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light  ">
+                <span class="color-placeholder fz-09">Ganancia</span>
+                <input type="number" name="" id="calc_tir_profit" class="fz-1 number-family">
+            </div>
+            <input type="text" readonly
+                class="fz-1-5 br-10 pad-1 br-10 border-light mar-tp-1 box-bg-t1 fw-6 ta-center gc-1-3"
+                id="tir_neta_result" value="0%">
+        </div>
+
+        <div class="dg gtc-2 box-bg-t1 pad-05-1 br-10 border-light gg-10 mar-tp-2">
+            <div class="fz-1-25 gc-1-3 mar-tp-05 mar-bm-1 border-bm-light pad-bm-05 mar-bm-05 color-primary fw-6">
+                Calcular precio de compra</div>
+            <div class="celda border-bm-light ">
+                <span class="color-placeholder fz-09">Fecha de compra</span>
+                <input type="date" name="" id="calc_price_buy_date" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light ">
+                <span class="color-placeholder fz-09">Vencimiento</span>
+                <input type="date" name="" id="calc_price_expired" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light gc-1-3 ">
+                <span class="color-placeholder fz-09">Diferencia de días</span>
+                <input type="text" name="" id="calc_price_days" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light ">
+                <span class="color-placeholder fz-09">Valor</span>
+                <input type="number" name="" id="calc_price_value" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light  ">
+                <span class="color-placeholder fz-09">TIR</span>
+                <input type="number" name="" id="calc_price_tir" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light  ">
+                <span class="color-placeholder fz-09">Descuentos (%)</span>
+                <input type="number" name="" id="calc_price_percent" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light  ">
+                <span class="color-placeholder fz-09">Comisión</span>
+                <input type="number" name="" id="calc_price_comission" class="fz-1 number-family">
+            </div>
+            <div class="celda border-bm-light  ">
+                <span class="color-placeholder fz-09">Margen</span>
+                <input type="number" name="" id="calc_price_margin" class="fz-1 number-family">
+            </div>
+
+            <div class="celda border-bm-light  ">
+                <span class="color-placeholder fz-09">Ganancia</span>
+                <input type="number" name="" id="calc_price_profit" class="fz-1 number-family">
+            </div>
+            <div class="border-light br-10 box-bg-t1">
+                <input type="text" readonly class="fz-1-25  pad-1 br-10 fw-6 ta-center gc-1-3 pad-05 number-family"
+                    id="price_result" value="$0">
+                <span class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">Precio de
+                    compra</span>
+            </div>
+            <div class="border-light br-10 box-bg-t1">
+                <input type="text" readonly class="fz-1-25  pad-1 br-10 fw-6 ta-center gc-1-3 pad-05 number-family"
+                    id="investment_result" value="$0">
+                <span class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">Inversión
+                    neta</span>
+            </div>
+        </div>
+    </div><!-- end content-all -->
+
+    <!-- Font Awesome 6.5.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- jQuery -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css">
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src='./resource/js/default.js'></script>
+    <script src='./resource/js/menu.js'></script>
+    <script src='./resource/js/header.js'></script>
+    <script src='./resource/js/calculadora.js'></script>
+
+</body>
+
+</html>

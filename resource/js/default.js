@@ -1,5 +1,7 @@
 // const URL_BASE = 'http://'+window.location.hostname + "/chequeado/"; 
-const URL_BASE = "http://chequeado.uy/";
+const URL_BASE = "https://MartinezK97.github.io/chequeadoHome/";
+
+
 const COMISSION = 0.21;
 const PROFIT = 0.79;
 const botonDinamico = document.getElementById("botonDinamico"); // Reemplázalo con el ID real de tu botón

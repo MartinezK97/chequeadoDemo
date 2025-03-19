@@ -6,19 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chequeado.uy - Acceder a mi cuenta</title>
-    <link rel="icon" href="<?php echo constant('URL') ?>/resource/img/logo_c.svg" type="image/svg+xml">
+    <link rel="icon" href="../resource/img/logo_c.svg" type="image/svg+xml">
     <meta id="theme-color-meta" name="theme-color" content="">
-    <link rel="stylesheet" href="../resources/css/default.css">
-    <link rel="stylesheet" href="../resources/css/header.css">
-    <link rel="stylesheet" href="../resources/css/grid.css">
-    <link rel="stylesheet" href="../resources/css/modals.css">
-    <link rel="stylesheet" href="../resources/css/menu.css">
-    <link rel="stylesheet" href="../resources/css/home.css">
-    <link rel="stylesheet" href="../resources/css/responsive.css">
-    <!--//? JS Libs -->
     <!-- Font Awesome 6.5.2 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
     <!-- jQuery -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -31,43 +22,90 @@
     <!-- jQuery UI -->
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.2/animate.min.js"></script>
-    <script src=""></script>
-
-    <script src="./resources/js/default.js"></script>
-    <script src="./resources/js/header.js"></script>
-    <script src="./resources/js/menu.js"></script>
-    <script src="./resources/js/home.js"></script>
-    <script src="./resources/js/responsive.js"></script>
-
-    <?php
-    //Assets
-    $this->libs(['font-awesome-5', 'jquery', 'axios', 'animateCSS']);
-    //CSS
-    $this->css(['default', 'responsive',]);
-    //JS
-    $this->js(['default',  'menu', 'googleSignIn',]);
-    ?>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel='stylesheet' href='../resource/css/default.css'>
+    <link rel='stylesheet' href='../resource/css/responsive.css'>
+    <link rel='stylesheet' href='../resource/css/menu.css'>
+    <script src='../resource/js/default.js'></script>
+    <script src='../resource/js/menu.js'></script>
+    <script src='../resource/js/googleSignIn.js'></script>
     <!-- Google OAuth2.0  -->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 
 </head>
 
 <body>
-    <?php
-    $this->render('header');
-    $this->render('invitado/menu');
-    $this->showMessages();
-    ?>
+    <link rel='stylesheet' href='../resource/css/header.css'>
+    <section class="header gc-1-3 gar-min blur-15 ac-center">
+        <a href="https://MartinezK97.github.io/chequeadoHome/" class="descontado maxw-min as-center fz-2">
+            <i class="company_icon"></i>
+            <span class="color">Chequeado</span>.uy
+        </a>
+        <section class="dg gtc-4 maxw-min gg-1 mar-a-0-a-a menu-header">
+            <a href="https://MartinezK97.github.io/chequeadoHome/"
+                class="ac-center border-bm-3 color-primary fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
+                alt="Página de inicio"><i class="as-center fa fa-home"></i> Inicio</a>
+            <a href="https://MartinezK97.github.io/chequeadoHome/acceder/"
+                class="ac-center border-bm-3  fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
+                alt="Acceder a la plataforma"><i class="as-center fa fa-user"></i> Acceder</a>
+            <a href="https://MartinezK97.github.io/chequeadoHome/calculadora/"
+                class="ac-center border-bm-3  fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
+                alt="Calculadora financiera"><i class="as-center fa fa-calculator"></i> Calculadora</a>
+            <a href="#footer" class="ac-center border-bm-3 fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
+                alt="Contactos"><i class="as-center fa fa-envelope"></i> Contactos</a>
+
+        </section>
+
+    </section>
+    <section class="menu hide minw-max maxw-max" id="menu">
+        <a href="https://MartinezK97.github.io/chequeadoHome/" class="link pad-05 minw-max dg gtc-1_5-a"><i
+                class="fa fa-home"></i> Inicio</a>
+        <a href="https://MartinezK97.github.io/chequeadoHome/acceder" class="link pad-05 minw-max dg gtc-1_5-a"><i
+                class="fa fa-sign-in"></i>
+            Acceder</a>
+        <a href="https://MartinezK97.github.io/chequeadoHome/registrarme" class="link pad-05 minw-max dg gtc-1_5-a"><i
+                class="fa fa-user-plus"></i> Registrarme</a>
+        <a href="https://MartinezK97.github.io/chequeadoHome/calculadora" class="link pad-05 minw-max dg gtc-1_5-a"><i
+                class="fa fa-calculator"></i> Calculadora</a>
+    </section>
+    <section class="content-menu-btn">
+
+
+        <a target="_blank" href="https://wa.me/+59898760446" class="btn-wpp "><i class="fab fa-whatsapp "></i><span
+                class="btn-desc color-green">WhatsApp</span></a>
+
+        <button class="menu-btn"><i class="fa fa-bars"></i><span class="btn-desc color-primary">Menú</span></button>
+        <a href="https://MartinezK97.github.io/chequeadoHome/acceder/" class="btn-new-check openModal" rel="login"><i
+                class=" fa fa-sign-in fz-2"></i><span class="btn-desc color-primary">Acceder</span></a>
+
+    </section>
     <div class="content-all">
-        <?php $getData = $this->getData;
-        $this->showMessages();
-        $this->render('invitado/menu');
-        // $this->render('invitado/acceder/form');
-        ?>
-        <form action="<?php echo constant('URL') . " acceder/authenticate/" ?>" method="post" class="dg ac-center br-10
-            mar-1 box-bg-t1 pad-1">
+        <section class="menu hide minw-max maxw-max" id="menu">
+            <a href="https://MartinezK97.github.io/chequeadoHome/" class="link pad-05 minw-max dg gtc-1_5-a"><i
+                    class="fa fa-home"></i>
+                Inicio</a>
+            <a href="https://MartinezK97.github.io/chequeadoHome/acceder" class="link pad-05 minw-max dg gtc-1_5-a"><i
+                    class="fa fa-sign-in"></i> Acceder</a>
+            <a href="https://MartinezK97.github.io/chequeadoHome/registrarme"
+                class="link pad-05 minw-max dg gtc-1_5-a"><i class="fa fa-user-plus"></i> Registrarme</a>
+            <a href="https://MartinezK97.github.io/chequeadoHome/calculadora"
+                class="link pad-05 minw-max dg gtc-1_5-a"><i class="fa fa-calculator"></i> Calculadora</a>
+        </section>
+        <section class="content-menu-btn">
+
+
+            <a target="_blank" href="https://wa.me/+59898760446" class="btn-wpp "><i class="fab fa-whatsapp "></i><span
+                    class="btn-desc color-green">WhatsApp</span></a>
+
+            <button class="menu-btn"><i class="fa fa-bars"></i><span class="btn-desc color-primary">Menú</span></button>
+            <a href="https://MartinezK97.github.io/chequeadoHome/acceder/" class="btn-new-check openModal"
+                rel="login"><i class=" fa fa-sign-in fz-2"></i><span class="btn-desc color-primary">Acceder</span></a>
+
+        </section>
+        <form action="#" method="post" class="dg ac-center br-10 mar-1 box-bg-t1 pad-1">
             <h4 class="title fz-1-25">Acceder</h4>
 
             <div class="mar-tp-1 pr box-bg-t1 br-10 pad-05-1">
@@ -81,7 +119,7 @@
                 <input name="password" type="password" class="ti-2 fz-1 mar-tp-05">
             </div>
             <div class="dg gtc-2 ac-center pad-bm-2 mar-tp-1">
-                <a href="<?php echo constant('URL') ?>recuperar/"
+                <a href="https://MartinezK97.github.io/chequeadoHome/recuperar/"
                     class="db border-0 color-link fz-09 maxh-min as-center border-0">Olvidé mi contraseña</a>
                 <button type="submit" class="btn-primary br-100 pad-05-2 fz-1 db mar-a-0-a-a maxw-max mar-tp-1"><i
                         class="fa fa-check"></i> Acceder</button>
@@ -90,8 +128,6 @@
             <p class="color-placeholder fz-1 border-mb-light pad-bm-05 mar-tp-2">Accede con tus redes sociales</p>
             <div id="google-signin-button" class="mar-tp-1 google-btn-access"></div>
         </form>
-        <?php #echo password_hash('112233', PASSWORD_DEFAULT, ['cost' => 10]) 
-        ?>
     </div><!-- end content-all -->
 
 

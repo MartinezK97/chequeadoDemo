@@ -456,19 +456,13 @@ input[type="range"]:disabled::-webkit-slider-thumb {
     }
 }
 
-
-
 .content-all {
-    /* border:solid 1px blue; */
     position: fixed;
     overflow: visible;
     inset: 0;
     background: var(--bodyC);
     overflow: scroll;
-    /* padding: 1rem 1rem 5rem1rem;
-        */
-    padding: 1rem;
-    /* max-width: var(); */
+    padding: calc(var(--headerH) + 1rem) 1rem 5rem 1rem;
     width: 100%;
     margin: 0 auto;
     z-index: 1;
@@ -1056,6 +1050,13 @@ input:checked+.slider:before {
 
 .nodisplay {
     display: none;
+}
+
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 select option {
