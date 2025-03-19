@@ -118,6 +118,7 @@ html {
 body {
     width: 100vw;
     max-width: 100vw;
+    overflow-x: hidden;
     min-width: 375px;
     margin: 0 auto;
     height: 100vh;
