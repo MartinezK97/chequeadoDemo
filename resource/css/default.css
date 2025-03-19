@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gowun+Dodum&family=Lexend+Giga:wght@100..900&family=Oxanium:wght@200..800&display=swap');
-
 @import "grid.css";
 @import "loader.css";
 @import "responsive.css";
@@ -11,7 +10,10 @@
     view-transition-name: 'ZoomIn';
 }
 
-
+html {
+    scroll-behavior: smooth;
+    transition: scroll-behavior 1s ease;
+}
 
 @view-transitions {
     navigation: auto;
@@ -497,16 +499,6 @@ input[type="range"]:disabled::-webkit-slider-thumb {
     background: #fff1;
     box-shadow: var(--shadow);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .box-bg {
