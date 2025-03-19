@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chequeado.uy - Acceder a mi cuenta</title>
+    <link rel="icon" href="<?php echo constant('URL') ?>/resource/img/logo_c.svg" type="image/svg+xml">
+    <meta id="theme-color-meta" name="theme-color" content="">
+    <link rel="stylesheet" href="../resources/css/default.css">
+    <link rel="stylesheet" href="../resources/css/header.css">
+    <link rel="stylesheet" href="../resources/css/grid.css">
+    <link rel="stylesheet" href="../resources/css/modals.css">
+    <link rel="stylesheet" href="../resources/css/menu.css">
+    <link rel="stylesheet" href="../resources/css/home.css">
+    <link rel="stylesheet" href="../resources/css/responsive.css">
+    <!--//? JS Libs -->
+    <!-- Font Awesome 6.5.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- jQuery -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.2/animate.min.js"></script>
+    <script src=""></script>
+
+    <script src="./resources/js/default.js"></script>
+    <script src="./resources/js/header.js"></script>
+    <script src="./resources/js/menu.js"></script>
+    <script src="./resources/js/home.js"></script>
+    <script src="./resources/js/responsive.js"></script>
+
+    <?php
+    //Assets
+    $this->libs(['font-awesome-5', 'jquery', 'axios', 'animateCSS']);
+    //CSS
+    $this->css(['default', 'responsive',]);
+    //JS
+    $this->js(['default',  'menu', 'googleSignIn',]);
+    ?>
+    <!-- Google OAuth2.0  -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+</head>
+
+<body>
+    <?php
+    $this->render('header');
+    $this->render('invitado/menu');
+    $this->showMessages();
+    ?>
+    <div class="content-all">
+        <?php $getData = $this->getData;
+        $this->showMessages();
+        $this->render('invitado/menu');
+        // $this->render('invitado/acceder/form');
+        ?>
+        <form action="<?php echo constant('URL') . " acceder/authenticate/" ?>" method="post" class="dg ac-center br-10
+            mar-1 box-bg-t1 pad-1">
+            <h4 class="title fz-1-25">Acceder</h4>
+
+            <div class="mar-tp-1 pr box-bg-t1 br-10 pad-05-1">
+                <span class="db color-placeholder fz-1">Correo electrónico o móvil:</span>
+                <i class="fa fa-user color-placeholder pa fz-1 in-a-a-075-1"></i>
+                <input name="username" type="text" placeholder="" class="ti-2 fz-1 mar-tp-05">
+            </div>
+            <div class="mar-tp-1 pr box-bg-t1 br-10 pad-05-1">
+                <span class="db color-placeholder fz-1">Contraseña:</span>
+                <i class="fa fa-key color-placeholder pa fz-1 in-a-a-075-1"></i>
+                <input name="password" type="password" class="ti-2 fz-1 mar-tp-05">
+            </div>
+            <div class="dg gtc-2 ac-center pad-bm-2 mar-tp-1">
+                <a href="<?php echo constant('URL') ?>recuperar/"
+                    class="db border-0 color-link fz-09 maxh-min as-center border-0">Olvidé mi contraseña</a>
+                <button type="submit" class="btn-primary br-100 pad-05-2 fz-1 db mar-a-0-a-a maxw-max mar-tp-1"><i
+                        class="fa fa-check"></i> Acceder</button>
+            </div>
+            <!-- <hr style="background:red;height:1px;border-bottom:solid 1px red;"> -->
+            <p class="color-placeholder fz-1 border-mb-light pad-bm-05 mar-tp-2">Accede con tus redes sociales</p>
+            <div id="google-signin-button" class="mar-tp-1 google-btn-access"></div>
+        </form>
+        <?php #echo password_hash('112233', PASSWORD_DEFAULT, ['cost' => 10]) 
+        ?>
+    </div><!-- end content-all -->
+
+
+    <script>
+        $(document).ready(() => {
+            $("#login").css('display', 'block');
+            $("#login .closeModal").css('display', 'none')
+        })
+    </script>
+</body>
+
+<script>
+
+</script>
+
+</html>

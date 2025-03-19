@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="110.22 250.068 342.883 265.041" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:guide x="-1.183" y="253.802" angle="90"/>
+    <bx:guide x="-1.183" y="406.313" angle="0"/>
+    <bx:guide x="488.582" y="510.083" angle="90"/>
+    <bx:guide x="488.582" y="258.912" angle="180"/>
+    <bx:guide x="575.056744600659" y="361.5027697458844" angle="0"/>
+    <bx:guide x="-40.096343485600784" y="510.4759457105441" angle="0"/>
+    <bx:guide x="577.0220899300081" y="253.8018456975552" angle="0"/>
+    <bx:guide x="71.92834028729635" y="466.0591412672551" angle="0"/>
+    <bx:guide x="16.112532933782703" y="433.0413397341906" angle="0"/>
+    <bx:guide x="30.656088370965847" y="438.1512375904982" angle="0"/>
+  </defs>
+  <rect x="62.035" y="142.434" width="78.955" height="131.742" style="fill-rule: nonzero; paint-order: stroke; fill: rgb(255, 255, 255); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0.999986, 0.005345, 0.854615, 1.004582, 102.555191, 225.838829)" rx="6.565" ry="6.565"/>
+  <rect x="178.965" y="87.604" width="77.595" height="184.857" style="paint-order: stroke; fill: rgb(255, 255, 255); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0.999991, 0.004275, -0.651447, 0.997224, 132.973737, 174.483668)" rx="4.28" ry="4.28"/>
+</svg>

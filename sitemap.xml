@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Página de Inicio -->
+  <url>
+    <loc>https://chequeado.uy/</loc>
+    <lastmod>2025-03-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Ejemplo de otra página: Servicios -->
+  <url>
+    <loc>https://chequeado.uy/datosAbiertos</loc>
+    <lastmod>2025-03-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Ejemplo de página de blog -->
+  <url>
+    <loc>https://chequeado.uy/preguntasFrecuentes</loc>
+    <lastmod>2025-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Agrega más URLs relevantes de tu sitio -->
+  
+</urlset>

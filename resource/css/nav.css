@@ -1,0 +1,27 @@
+nav{
+    /* border:solid 1px #fff; */
+    padding:10px;
+    position:sticky;
+    top:-1rem;
+    width:calc(100% + 0.75rem);
+    margin:0 0 0 -1rem;
+    background:var(--bodyC-05);
+    backdrop-filter: blur(20px);z-index:4;
+    max-width:100%;
+    width:100%;
+    margin:0;
+    padding:0 0 0.5rem 0;
+}
+nav .option{
+    /* border:solid 1px #fff; */
+    padding:10px;
+    border-bottom:solid 2px var(--primary);
+}
+
+nav .option.selected{
+    color:#fff;
+    border-bottom:solid 2px #fff;
+
+    font-weight:500;
+}
+

@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cheques/
+Disallow: /ofertas/
+Disallow: /ventas/
+Disallow: /comisiones/
+Disallow: /comprobantes/
+Disallow: /contratos/
+Disallow: /libradores/
+Disallow: /paneles/
+Disallow: /config/
+Allow: /
+
+Sitemap: http://chequeado.uy/sitemap.xml
