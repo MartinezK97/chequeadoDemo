@@ -29,7 +29,7 @@
     height: 75%;
 }
 
-.content-all .box {
+/* .content-all .box {
     min-height: 100vh;
     width: 100%;
     position: relative;
@@ -39,7 +39,7 @@
     padding: 1rem;
     color: #fff;
     border-radius: 0;
-}
+} */
 
 .box .content {
     display: block;

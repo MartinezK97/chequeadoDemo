@@ -10,12 +10,12 @@
     <meta id="theme-color-meta" name="theme-color" content="">
     <link rel="icon" href="../resource/img/logo_c.svg" type="image/svg+xml">
     <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link rel='stylesheet' href='../resource/css/home.css'>
     <link rel='stylesheet' href='../resource/css/default.css'>
     <link rel='stylesheet' href='../resource/css/modals.css'>
     <link rel='stylesheet' href='../resource/css/menu.css'>
     <link rel='stylesheet' href='../resource/css/header.css'>
     <link rel='stylesheet' href='../resource/css/calculadoras.css'>
-    <link rel='stylesheet' href='../resource/css/home.css'>
     <!--//? JS Libs -->
     <!-- Font Awesome 6.5.2 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -89,110 +89,117 @@
         </a>
     </section>
     <div class="content-all">
-        <div class="dg gtc-2 gg-1 box w100">
-
-            <div class="dg gtc-2 box-bg-t1 pad-05-1 br-10 border-light gg-10 calculadora gar-min pad-05 mar-a-0-a-a"
-                id="calculadoraTIR">
-                <p class="fz-1-5 border-bm-light mar-0 pad-1 color-primary gc-1-3">Calcular TIR</p>
-                <div class="gc-1-3 border-bm-light color-placeholder fz-09 pad-bm-05">Calcula la tasa interna de retorno
-                    neta anualizada,
-                    según la fecha de compra, el
-                    valor nominal, y su vencimiento.</div>
-                <div class="celda border-bm-light ">
-                    <span class="color-placeholder fz-09">Fecha de compra</span>
-                    <input type="date" name="" id="calc_tir_buy_date" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light ">
-                    <span class="color-placeholder fz-09">Vencimiento</span>
-                    <input type="date" name="" id="calc_tir_expired" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light gc-1-3">
-                    <span class="color-placeholder fz-09">Diferencia en días</span>
-                    <input type="number" name="" id="calc_tir_days" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light ">
-                    <span class="color-placeholder fz-09">Valor</span>
-                    <input type="number" name="" id="calc_tir_value" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light  ">
-                    <span class="color-placeholder fz-09">Precio</span>
-                    <input type="number" name="" id="calc_tir_buy" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light  ">
-                    <span class="color-placeholder fz-09">Comisión (%)</span>
-                    <input type="number" name="" id="calc_tir_comission" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light  ">
-                    <span class="color-placeholder fz-09">Ganancia</span>
-                    <input type="number" name="" id="calc_tir_profit" class="fz-1 number-family">
-                </div>
-                <div class="border-light br-10 box-bg-t1 gc-1-3">
-                    <input type="text" readonly
-                        class="fz-1-5 br-10 pad-1 br-10 mar-tp-1 fw-6 ta-center gc-1-3 number-family"
-                        id="tir_neta_result" value="0%">
-                    <span class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">TIR neta
-                        anual</span>
-                </div>
-            </div>
-
-            <div class="dg gtc-2 box-bg-t1 pad-05-1 br-10 border-light gg-10 calculadora gar-min pad-05">
-                <p class="fz-1-5 border-bm-light mar-0 pad-1 color-primary gc-1-3">Calcular precio de compra</p>
-                <div class="gc-1-3 border-bm-light color-placeholder fz-09 pad-bm-05">Calcula cuanto debes ofertar por
-                    un cheque, si deseas obtener X% de
-                    TIR neta anualizada, según la fecha de compra, el valor nominal, y su vencimiento.</div>
-                <div class="celda border-bm-light ">
-                    <span class="color-placeholder fz-09">Fecha de compra</span>
-                    <input type="date" name="" id="calc_price_buy_date" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light ">
-                    <span class="color-placeholder fz-09">Vencimiento</span>
-                    <input type="date" name="" id="calc_price_expired" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light gc-1-3 ">
-                    <span class="color-placeholder fz-09">Diferencia de días</span>
-                    <input type="text" name="" id="calc_price_days" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light ">
-                    <span class="color-placeholder fz-09">Valor</span>
-                    <input type="number" name="" id="calc_price_value" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light  ">
-                    <span class="color-placeholder fz-09">TIR</span>
-                    <input type="number" name="" id="calc_price_tir" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light  ">
-                    <span class="color-placeholder fz-09">Descuentos (%)</span>
-                    <input type="number" name="" id="calc_price_percent" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light  ">
-                    <span class="color-placeholder fz-09">Comisión</span>
-                    <input type="number" name="" id="calc_price_comission" class="fz-1 number-family">
-                </div>
-                <div class="celda border-bm-light  ">
-                    <span class="color-placeholder fz-09">Margen</span>
-                    <input type="number" name="" id="calc_price_margin" class="fz-1 number-family">
+        <div class="box">
+            <div class="dg gtc-2 ac-center ai-center gg-1 w100 gar-min mar-tp-2">
+                <div class="dg gtc-2 box-bg-t1 pad-05-1 br-10 border-light gg-10 calculadora gar-min pad-05 mar-a-0-a-a"
+                    id="calculadoraTIR">
+                    <p class="fz-1-5 border-bm-light mar-0 pad-1 color-primary gc-1-3">Calcular TIR</p>
+                    <div class="gc-1-3 border-bm-light color-placeholder fz-09 pad-bm-05">Calcula la tasa interna de
+                        retorno
+                        neta anualizada,
+                        según la fecha de compra, el
+                        valor nominal, y su vencimiento.</div>
+                    <div class="celda border-bm-light ">
+                        <span class="color-placeholder fz-09">Fecha de compra</span>
+                        <input type="date" name="" id="calc_tir_buy_date" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light ">
+                        <span class="color-placeholder fz-09">Vencimiento</span>
+                        <input type="date" name="" id="calc_tir_expired" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light gc-1-3">
+                        <span class="color-placeholder fz-09">Diferencia en días</span>
+                        <input type="number" name="" id="calc_tir_days" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light ">
+                        <span class="color-placeholder fz-09">Valor</span>
+                        <input type="number" name="" id="calc_tir_value" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light  ">
+                        <span class="color-placeholder fz-09">Precio</span>
+                        <input type="number" name="" id="calc_tir_buy" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light  ">
+                        <span class="color-placeholder fz-09">Comisión (%)</span>
+                        <input type="number" name="" id="calc_tir_comission" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light  ">
+                        <span class="color-placeholder fz-09">Ganancia</span>
+                        <input type="number" name="" id="calc_tir_profit" class="fz-1 number-family">
+                    </div>
+                    <div class="border-light br-10 box-bg-t1 gc-1-3">
+                        <input type="text" readonly
+                            class="fz-1-5 br-10 pad-1 br-10 mar-tp-1 fw-6 ta-center gc-1-3 number-family"
+                            id="tir_neta_result" value="0%">
+                        <span class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">TIR
+                            neta
+                            anual</span>
+                    </div>
                 </div>
 
-                <div class="celda border-bm-light  ">
-                    <span class="color-placeholder fz-09">Ganancia</span>
-                    <input type="number" name="" id="calc_price_profit" class="fz-1 number-family">
-                </div>
-                <div class="border-light br-10 box-bg-t1">
-                    <input type="text" readonly class="fz-1-25  pad-1 br-10 fw-6 ta-center gc-1-3 pad-05 number-family"
-                        id="price_result" value="$0">
-                    <span class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">Precio
-                        de
-                        compra</span>
-                </div>
-                <div class="border-light br-10 box-bg-t1">
-                    <input type="text" readonly class="fz-1-25  pad-1 br-10 fw-6 ta-center gc-1-3 pad-05 number-family"
-                        id="investment_result" value="$0">
-                    <span class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">Inversión
-                        neta</span>
+                <div class="dg gtc-2 box-bg-t1 pad-05-1 br-10 border-light gg-10 calculadora gar-min pad-05">
+                    <p class="fz-1-5 border-bm-light mar-0 pad-1 color-primary gc-1-3">Calcular precio de compra</p>
+                    <div class="gc-1-3 border-bm-light color-placeholder fz-09 pad-bm-05">Calcula cuanto debes ofertar
+                        por
+                        un cheque, si deseas obtener X% de
+                        TIR neta anualizada, según la fecha de compra, el valor nominal, y su vencimiento.</div>
+                    <div class="celda border-bm-light ">
+                        <span class="color-placeholder fz-09">Fecha de compra</span>
+                        <input type="date" name="" id="calc_price_buy_date" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light ">
+                        <span class="color-placeholder fz-09">Vencimiento</span>
+                        <input type="date" name="" id="calc_price_expired" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light gc-1-3 ">
+                        <span class="color-placeholder fz-09">Diferencia de días</span>
+                        <input type="text" name="" id="calc_price_days" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light ">
+                        <span class="color-placeholder fz-09">Valor</span>
+                        <input type="number" name="" id="calc_price_value" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light  ">
+                        <span class="color-placeholder fz-09">TIR</span>
+                        <input type="number" name="" id="calc_price_tir" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light  ">
+                        <span class="color-placeholder fz-09">Descuentos (%)</span>
+                        <input type="number" name="" id="calc_price_percent" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light  ">
+                        <span class="color-placeholder fz-09">Comisión</span>
+                        <input type="number" name="" id="calc_price_comission" class="fz-1 number-family">
+                    </div>
+                    <div class="celda border-bm-light  ">
+                        <span class="color-placeholder fz-09">Margen</span>
+                        <input type="number" name="" id="calc_price_margin" class="fz-1 number-family">
+                    </div>
+
+                    <div class="celda border-bm-light  ">
+                        <span class="color-placeholder fz-09">Ganancia</span>
+                        <input type="number" name="" id="calc_price_profit" class="fz-1 number-family">
+                    </div>
+                    <div class="border-light br-10 box-bg-t1">
+                        <input type="text" readonly
+                            class="fz-1-25  pad-1 br-10 fw-6 ta-center gc-1-3 pad-05 number-family" id="price_result"
+                            value="$0">
+                        <span
+                            class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">Precio
+                            de
+                            compra</span>
+                    </div>
+                    <div class="border-light br-10 box-bg-t1">
+                        <input type="text" readonly
+                            class="fz-1-25  pad-1 br-10 fw-6 ta-center gc-1-3 pad-05 number-family"
+                            id="investment_result" value="$0">
+                        <span
+                            class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">Inversión
+                            neta</span>
+                    </div>
                 </div>
             </div>
         </div>
-
 
         <div id="footer" class="pad-1">
             <div class="dg gtc-2 ac-center gg-1 maxw-max  mar-0-a ai-center">

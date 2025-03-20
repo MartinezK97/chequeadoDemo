@@ -1,4 +1,9 @@
 @media(width < 999px) {
+
+    .calculadora {
+        margin: 1rem auto !important;
+    }
+
     .fz-1-25 {
         font-size: 1rem;
     }
