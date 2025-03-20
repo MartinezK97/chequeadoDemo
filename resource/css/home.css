@@ -57,6 +57,7 @@
     border-radius: 50%;
     box-shadow: 0 0 8px #0005;
     margin: 0 auto;
+    filter: blur(4px);
 }
 
 .emailCorporativo {

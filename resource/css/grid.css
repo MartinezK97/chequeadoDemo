@@ -317,6 +317,7 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+
 .gtc-2-a {
     grid-template-columns: 2rem auto;
 }

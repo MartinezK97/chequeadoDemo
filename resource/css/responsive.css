@@ -31,7 +31,7 @@
         display: none;
     }
 
-    .gtc-2 {
+    .gtc-2:not(.inmutable) {
         grid-template-columns: 1fr;
     }
 
