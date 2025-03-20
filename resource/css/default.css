@@ -1352,6 +1352,10 @@ select option {
     display: none;
 }
 
+p {
+    line-height: 1.5;
+}
+
 .pe-none {
     pointer-events: none;
 }

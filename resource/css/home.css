@@ -49,6 +49,24 @@
     height: 75%;
 }
 
+.foto {
+    width: clamp(200px, 50vw, 300px);
+    height: clamp(200px, 50vw, 300px);
+    border: solid 1px #fff1;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #0005;
+    margin: 0 auto;
+}
+
+.emailCorporativo {
+    /* border: solid 1px; */
+    padding: 1rem;
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
 
 #forVendors,
 #forInvestors {
@@ -67,6 +85,11 @@
     background: #1d2d33;
 }
 
+
+#quienesSomos p {
+    width: clamp(260px, 100%, 600px);
+    margin: 1rem auto;
+}
 
 #footer {
     position: relative;

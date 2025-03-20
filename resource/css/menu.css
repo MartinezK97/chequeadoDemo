@@ -149,8 +149,8 @@
 
 }
 
-.btn-wpp:before {
-    content: "";
+.btn-wpp .before {
+    /* content: ""; */
     display: block;
     position: relative;
     width: 3.2rem;
