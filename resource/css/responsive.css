@@ -43,6 +43,13 @@
         padding-bottom: 2.5rem
     }
 
+    .footer_footer {
+        padding-bottom: 5.5rem;
+        position: relative;
+        margin: 0;
+        background-color: var(--bodyC);
+    }
+
 }
 
 /* End point */
@@ -62,5 +69,11 @@
 
     .content-menu-btn {
         display: none;
+    }
+
+    #loginForm,
+    #signupForm {
+        width: clamp(260px, 100%, 500px);
+        margin: 0 auto;
     }
 }

@@ -1,0 +1,3 @@
+.calculadora {
+    width: clamp(260px, 100%, 400px);
+}

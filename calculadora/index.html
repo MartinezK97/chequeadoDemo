@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chequeado.uy - Calculadora Financiera</title>
     <meta id="theme-color-meta" name="theme-color" content="">
-    <link rel="icon" href="URL/resource/img/logo_c.svg" type="image/svg+xml">
+    <link rel="icon" href="../resource/img/logo_c.svg" type="image/svg+xml">
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <link rel='stylesheet' href='../resource/css/default.css'>
     <link rel='stylesheet' href='../resource/css/modals.css'>
     <link rel='stylesheet' href='../resource/css/menu.css'>
     <link rel='stylesheet' href='../resource/css/header.css'>
+    <link rel='stylesheet' href='../resource/css/calculadoras.css'>
+    <link rel='stylesheet' href='../resource/css/home.css'>
+    <!--//? JS Libs -->
+    <!-- Font Awesome 6.5.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <!-- jQuery -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.2/animate.min.js"></script>
+
+    <script src="../resource/js/default.js"></script>
+    <script src="../resource/js/header.js"></script>
+    <script src="../resource/js/menu.js"></script>
+    <script src="../resource/js/home.js"></script>
+    <script src="../resource/js/calculadora.js"></script>
+    <script src="../resource/js/responsive.js"></script>
 </head>
 
 <body>
@@ -24,13 +51,13 @@
         </a>
         <section class="dg gtc-4 maxw-min gg-1 mar-a-0-a-a menu-header">
             <a href="https://MartinezK97.github.io/chequeadoHome/"
-                class="ac-center border-bm-3 color-primary fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
+                class="ac-center border-bm-3 fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
                 alt="Página de inicio"><i class="as-center fa fa-home"></i> Inicio</a>
             <a href="https://MartinezK97.github.io/chequeadoHome/acceder/"
                 class="ac-center border-bm-3  fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
                 alt="Acceder a la plataforma"><i class="as-center fa fa-user"></i> Acceder</a>
             <a href="https://MartinezK97.github.io/chequeadoHome/calculadora/"
-                class="ac-center border-bm-3  fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
+                class="color-primary ac-center border-bm-3  fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
                 alt="Calculadora financiera"><i class="as-center fa fa-calculator"></i> Calculadora</a>
             <a href="#footer" class="ac-center border-bm-3 fz-1-25 border-bm-2 minw-max dg gtc-1-a gg-10 pad-05-1"
                 alt="Contactos"><i class="as-center fa fa-envelope"></i> Contactos</a>
@@ -62,95 +89,164 @@
         </a>
     </section>
     <div class="content-all">
-        <div class="dg gtc-2 box-bg-t1 pad-05-1 br-10 border-light gg-10">
-            <div class="fz-1-25 gc-1-3 mar-tp-05 mar-bm-05 border-bm-light pad-bm-05 mar-bm-05 color-primary fw-6">
-                Calcular TIR</div>
-            <div class="celda border-bm-light ">
-                <span class="color-placeholder fz-09">Fecha de compra</span>
-                <input type="date" name="" id="calc_tir_buy_date" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light ">
-                <span class="color-placeholder fz-09">Vencimiento</span>
-                <input type="date" name="" id="calc_tir_expired" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light gc-1-3">
-                <span class="color-placeholder fz-09">Diferencia en días</span>
-                <input type="number" name="" id="calc_tir_days" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light ">
-                <span class="color-placeholder fz-09">Valor</span>
-                <input type="number" name="" id="calc_tir_value" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light  ">
-                <span class="color-placeholder fz-09">Precio</span>
-                <input type="number" name="" id="calc_tir_buy" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light  ">
-                <span class="color-placeholder fz-09">Comisión (%)</span>
-                <input type="number" name="" id="calc_tir_comission" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light  ">
-                <span class="color-placeholder fz-09">Ganancia</span>
-                <input type="number" name="" id="calc_tir_profit" class="fz-1 number-family">
-            </div>
-            <input type="text" readonly
-                class="fz-1-5 br-10 pad-1 br-10 border-light mar-tp-1 box-bg-t1 fw-6 ta-center gc-1-3"
-                id="tir_neta_result" value="0%">
-        </div>
+        <div class="dg gtc-2 gg-1 box w100">
 
-        <div class="dg gtc-2 box-bg-t1 pad-05-1 br-10 border-light gg-10 mar-tp-2">
-            <div class="fz-1-25 gc-1-3 mar-tp-05 mar-bm-1 border-bm-light pad-bm-05 mar-bm-05 color-primary fw-6">
-                Calcular precio de compra</div>
-            <div class="celda border-bm-light ">
-                <span class="color-placeholder fz-09">Fecha de compra</span>
-                <input type="date" name="" id="calc_price_buy_date" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light ">
-                <span class="color-placeholder fz-09">Vencimiento</span>
-                <input type="date" name="" id="calc_price_expired" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light gc-1-3 ">
-                <span class="color-placeholder fz-09">Diferencia de días</span>
-                <input type="text" name="" id="calc_price_days" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light ">
-                <span class="color-placeholder fz-09">Valor</span>
-                <input type="number" name="" id="calc_price_value" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light  ">
-                <span class="color-placeholder fz-09">TIR</span>
-                <input type="number" name="" id="calc_price_tir" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light  ">
-                <span class="color-placeholder fz-09">Descuentos (%)</span>
-                <input type="number" name="" id="calc_price_percent" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light  ">
-                <span class="color-placeholder fz-09">Comisión</span>
-                <input type="number" name="" id="calc_price_comission" class="fz-1 number-family">
-            </div>
-            <div class="celda border-bm-light  ">
-                <span class="color-placeholder fz-09">Margen</span>
-                <input type="number" name="" id="calc_price_margin" class="fz-1 number-family">
+            <div class="dg gtc-2 box-bg-t1 pad-05-1 br-10 border-light gg-10 calculadora gar-min pad-05 mar-a-0-a-a"
+                id="calculadoraTIR">
+                <p class="fz-1-5 border-bm-light mar-0 pad-1 color-primary gc-1-3">Calcular TIR</p>
+                <div class="gc-1-3 border-bm-light color-placeholder fz-09 pad-bm-05">Calcula la tasa interna de retorno
+                    neta anualizada,
+                    según la fecha de compra, el
+                    valor nominal, y su vencimiento.</div>
+                <div class="celda border-bm-light ">
+                    <span class="color-placeholder fz-09">Fecha de compra</span>
+                    <input type="date" name="" id="calc_tir_buy_date" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light ">
+                    <span class="color-placeholder fz-09">Vencimiento</span>
+                    <input type="date" name="" id="calc_tir_expired" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light gc-1-3">
+                    <span class="color-placeholder fz-09">Diferencia en días</span>
+                    <input type="number" name="" id="calc_tir_days" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light ">
+                    <span class="color-placeholder fz-09">Valor</span>
+                    <input type="number" name="" id="calc_tir_value" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light  ">
+                    <span class="color-placeholder fz-09">Precio</span>
+                    <input type="number" name="" id="calc_tir_buy" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light  ">
+                    <span class="color-placeholder fz-09">Comisión (%)</span>
+                    <input type="number" name="" id="calc_tir_comission" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light  ">
+                    <span class="color-placeholder fz-09">Ganancia</span>
+                    <input type="number" name="" id="calc_tir_profit" class="fz-1 number-family">
+                </div>
+                <div class="border-light br-10 box-bg-t1 gc-1-3">
+                    <input type="text" readonly
+                        class="fz-1-5 br-10 pad-1 br-10 mar-tp-1 fw-6 ta-center gc-1-3 number-family"
+                        id="tir_neta_result" value="0%">
+                    <span class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">TIR neta
+                        anual</span>
+                </div>
             </div>
 
-            <div class="celda border-bm-light  ">
-                <span class="color-placeholder fz-09">Ganancia</span>
-                <input type="number" name="" id="calc_price_profit" class="fz-1 number-family">
-            </div>
-            <div class="border-light br-10 box-bg-t1">
-                <input type="text" readonly class="fz-1-25  pad-1 br-10 fw-6 ta-center gc-1-3 pad-05 number-family"
-                    id="price_result" value="$0">
-                <span class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">Precio de
-                    compra</span>
-            </div>
-            <div class="border-light br-10 box-bg-t1">
-                <input type="text" readonly class="fz-1-25  pad-1 br-10 fw-6 ta-center gc-1-3 pad-05 number-family"
-                    id="investment_result" value="$0">
-                <span class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">Inversión
-                    neta</span>
+            <div class="dg gtc-2 box-bg-t1 pad-05-1 br-10 border-light gg-10 calculadora gar-min pad-05">
+                <p class="fz-1-5 border-bm-light mar-0 pad-1 color-primary gc-1-3">Calcular precio de compra</p>
+                <div class="gc-1-3 border-bm-light color-placeholder fz-09 pad-bm-05">Calcula cuanto debes ofertar por
+                    un cheque, si deseas obtener X% de
+                    TIR neta anualizada, según la fecha de compra, el valor nominal, y su vencimiento.</div>
+                <div class="celda border-bm-light ">
+                    <span class="color-placeholder fz-09">Fecha de compra</span>
+                    <input type="date" name="" id="calc_price_buy_date" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light ">
+                    <span class="color-placeholder fz-09">Vencimiento</span>
+                    <input type="date" name="" id="calc_price_expired" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light gc-1-3 ">
+                    <span class="color-placeholder fz-09">Diferencia de días</span>
+                    <input type="text" name="" id="calc_price_days" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light ">
+                    <span class="color-placeholder fz-09">Valor</span>
+                    <input type="number" name="" id="calc_price_value" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light  ">
+                    <span class="color-placeholder fz-09">TIR</span>
+                    <input type="number" name="" id="calc_price_tir" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light  ">
+                    <span class="color-placeholder fz-09">Descuentos (%)</span>
+                    <input type="number" name="" id="calc_price_percent" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light  ">
+                    <span class="color-placeholder fz-09">Comisión</span>
+                    <input type="number" name="" id="calc_price_comission" class="fz-1 number-family">
+                </div>
+                <div class="celda border-bm-light  ">
+                    <span class="color-placeholder fz-09">Margen</span>
+                    <input type="number" name="" id="calc_price_margin" class="fz-1 number-family">
+                </div>
+
+                <div class="celda border-bm-light  ">
+                    <span class="color-placeholder fz-09">Ganancia</span>
+                    <input type="number" name="" id="calc_price_profit" class="fz-1 number-family">
+                </div>
+                <div class="border-light br-10 box-bg-t1">
+                    <input type="text" readonly class="fz-1-25  pad-1 br-10 fw-6 ta-center gc-1-3 pad-05 number-family"
+                        id="price_result" value="$0">
+                    <span class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">Precio
+                        de
+                        compra</span>
+                </div>
+                <div class="border-light br-10 box-bg-t1">
+                    <input type="text" readonly class="fz-1-25  pad-1 br-10 fw-6 ta-center gc-1-3 pad-05 number-family"
+                        id="investment_result" value="$0">
+                    <span class="color-placeholder fz-08 ta-center db maxw-max border-tp-light pad-05 mar-0-a">Inversión
+                        neta</span>
+                </div>
             </div>
         </div>
+
+
+        <div id="footer" class="pad-1">
+            <div class="dg gtc-2 ac-center gg-1 maxw-max  mar-0-a ai-center">
+                <div class="ta-center box-bg-t1-invert pad-1-2 br-10 border-light">
+                    <p class="fz-2 fw-6">Seguinos en nuestras redes</p>
+                    <div class="dg gtc-4 gg-1 maxw-max mar-0-a pad-1">
+                        <a alt="Contacto via whatsapp" href="#" class="fz-3"><i class="fab fa-whatsapp"></i></a>
+                        <a alt="Contacto via linkedin" href="#" class="fz-3"><i class="fab fa-linkedin"></i></a>
+                        <a alt="Contacto via twitter" href="#" class="fz-3"><i class="fab fa-x-twitter"></i></a>
+                        <a alt="Contacto via TikTok" href="#" class="fz-3"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="ta-center">
+                    <p class="fw-5 fz-2 ta-center">Contactate con nosotros</p>
+                    <div class="fz-1 dg gtc-2 ac-center ta-center pad-1 maxw-max mar-0-a">
+                        <span class="fz-1-5">¿Deseas vender?</span>
+                        <a class="color-primary fz-1-5" alt="Correo de contacto para vendedores"
+                            href="mailto:vendedores@chequeado.uy">vendedores@chequeado.uy</a>
+                    </div>
+                    <div class="fz-1 dg gtc-2 ac-center ta-center pad-1 maxw-max mar-0-a">
+                        <span class="fz-1-5">¿Deseas invertir?</span>
+                        <a class="color-primary fz-1-5" alt="Correo de contacto para inversores"
+                            href="mailto:inversores@chequeado.uy">inversores@chequeado.uy</a>
+                    </div>
+                    <div class="fz-1 ac-center ta-center gc-1-3 pad-1">
+                        <span class="fz-1-5">Si aún tienes dudas,<br> puedes visitar nuestra sección de </span>
+                        <a class="color-primary fz-1-5 db pad-1 " alt="Acceder a preguntas frecuentes" href="">Preguntas
+                            Frecuentes</a>
+                    </div>
+
+                </div>
+
+                <div class=" ta-center mar-bm-1">
+                    <p class="fz-2 ta-center">¿Dónde estamos?</p>
+                    <iframe class="mar-0-a"
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2751.415530506037!2d-56.19556300109642!3d-34.90637610116004!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1742323652952!5m2!1ses-419!2suy"
+                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="ta-center box-bg-t1-invert pad-1-2 br-10 border-light">
+                    <p class="fz-2 mar-0 pad-1">Horarios de atención</p>
+                    <div class="fz-1-25">De lunes a viernes de 10:00 a 18:00 hs</div>
+                </div>
+            </div>
+
+        </div>
+        <p class="ta-right box-bg-t1 fz-075 pad-025 color-placeholder mar-0 footer_footer">Copyright 2025.
+            Chequeado.uy.
+            Todos los
+            derechos reservados. Diseño y desarrollo: Mart Solutions.</p>
+        <a href="https://www.chequeado.uy" class="whatsapp-button fz-5 maxw-max mar-0 pad-0 maxh-min"><i
+                class="fab fa-whatsapp"></i></a>
+
     </div><!-- end content-all -->
 
     <!-- Font Awesome 6.5.2 -->

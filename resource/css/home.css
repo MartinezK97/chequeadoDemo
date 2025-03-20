@@ -91,15 +91,7 @@
     margin: 1rem auto;
 }
 
-#footer {
-    position: relative;
-    background-image: url(../img/footer.svg);
-    background-repeat: no-repeat;
-    min-height: 75vh;
-    background-color: #113543;
-    padding-top: calc(100px + 2rem);
-    background-size: 100%;
-}
+
 
 #consultas {
     width: clamp(300px, 100%, 500px);
@@ -113,7 +105,7 @@
 }
 
 @supports (field-sizing: content) {
-    #consultas .auto-resize {
+    .auto-resize {
         field-sizing: content;
     }
 }
