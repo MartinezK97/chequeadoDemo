@@ -160,6 +160,11 @@ input[type="checkbox"]:checked::before {
     left: 2px;
 } */
 
+.content-tabs,
+.tab_content {
+    width: clamp(300px, 100%, 600px);
+    margin: 1rem auto;
+}
 
 
 .content-checkbox {
@@ -1494,6 +1499,10 @@ p {
 
 .pad-10 {
     padding: 10px;
+}
+
+.pad-tpheaderH {
+    padding-top: calc(var(--headerH) + 1rem)
 }
 
 .pad-tp-025 {

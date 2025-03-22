@@ -2,9 +2,10 @@ $(document).ready(function () {
     // Cuando se haga clic en la pregunta
     $(".question").css('transition', '250ms ease-in-out')
     $('.question').click(function () {
+        $(this).toggleClass(['box-bg-t1', 'border-light', 'pad-1'])
         // Alternar la visibilidad de la respuesta correspondiente
-        $(this).find('div.fz-1').toggleClass('nodisplay');
-        $(".question").removeClass(["box-bg-t1", " pad-1"])
+        $(this).find('div.fz-1').toggleClass(['nodisplay', 'border-bm-light']);
+        // $(".question").removeClass('border-bm-light')
         // Alternar el icono de expansión (cambiar entre fa-angle-down y fa-angle-up)
         var icon = $(this).find('i');
         var question = $(this).find('p');
