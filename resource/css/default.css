@@ -1465,6 +1465,10 @@ p {
     padding: 2rem;
 }
 
+.pad-2-1 {
+    padding: 2rem 1rem;
+}
+
 .pad-3 {
     padding: 3rem;
 }
