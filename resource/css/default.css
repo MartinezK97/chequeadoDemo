@@ -182,6 +182,8 @@ input[type="range"] {
     width: 12.5em;
 }
 
+
+
 input[type="range"] {
     color: var(--primary);
     --thumb-height: 1.125em;
@@ -192,6 +194,9 @@ input[type="range"] {
     --clip-edges: 0.125em;
 }
 
+input[type="range"].w100 {
+    width: 100%;
+}
 
 /* === range commons === */
 input[type="range"] {
