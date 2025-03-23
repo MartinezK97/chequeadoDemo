@@ -23,6 +23,7 @@
     color: #fff;
     display: grid;
     grid-template-columns: 4rem auto auto;
+    text-shadow: 0 0 5px #0008;
 
 }
 
