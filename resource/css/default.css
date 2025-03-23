@@ -1509,7 +1509,7 @@ p {
     padding: 10px;
 }
 
-.pad-tpheaderH {
+.pad-tp-headerH {
     padding-top: calc(var(--headerH) + 1rem)
 }
 
@@ -1700,6 +1700,12 @@ button:hover {
     position: relative;
     top: -0.1rem;
     margin-right: 2px;
+}
+
+#demo_img {
+    width: clamp(300px, 96%, 500px);
+    margin: calc(var(--headerH) + 1rem) auto 0;
+    display: block;
 }
 
 nav a.dot-red:before {
