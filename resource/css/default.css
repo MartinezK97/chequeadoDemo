@@ -6,7 +6,7 @@
 :root {
     --mw: 100vw;
     --menuW: 17rem;
-    --headerH: 3rem;
+    --headerH: 4rem;
     view-transition-name: 'ZoomIn';
 }
 

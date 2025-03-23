@@ -18,11 +18,11 @@
 }
 
 .header .chequeadouy {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #fff;
     display: grid;
-    grid-template-columns: 2rem auto auto;
+    grid-template-columns: 4rem auto auto;
 
 }
 
@@ -37,12 +37,12 @@
 
 
 .header .company_icon {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: var(--headerH);
+    height: var(--headerH);
     display: inline-block;
     background-image: url(../img/logo_w.svg);
     background-position: 50% 50%;
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
