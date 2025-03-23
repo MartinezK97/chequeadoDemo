@@ -15,9 +15,9 @@ html {
     transition: scroll-behavior 1s ease;
 }
 
-@view-transitions {
+/* @view-transitions {
     navigation: auto;
-}
+} */
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
