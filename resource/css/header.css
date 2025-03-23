@@ -28,9 +28,7 @@
 
 .header .chequeadouy,
 .header .chequeadouy span {
-    font-family: "Playwrite HU", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: "Playwrite HU";
 }
 
 .header .chequeadouy .color {
@@ -47,5 +45,4 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin-right: 1rem;
-    align-self: center;
 }
