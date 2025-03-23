@@ -16,9 +16,9 @@ $(document).ready(function () {
       var margin = nominal - price;
       var comission = margin * COMISSION;
       var profits = margin - comission;
-      $("#calculadoraTIR .margin").val(num(margin));
-      $("#calculadoraTIR .comission").val(num(comission));
-      $("#calculadoraTIR .profits").val(num(profits));
+      $("#calculadoraTIR .margin").val('$' + num(margin));
+      $("#calculadoraTIR .comission").val('$' + num(comission));
+      $("#calculadoraTIR .profits").val(num('$' + profits));
       if (days > 0) {
         const tir = (Math.pow((nominal / (nominal - profits)), (360 / (days + 1))) - 1) * 100;
         $("#calculadoraTIR .result").val(num(tir) + '%');
@@ -59,11 +59,11 @@ $(document).ready(function () {
 
 
       // Asignar valores a los campos
-      $("#calcOffer .offer").val(num(montoOferta));
-      $("#calcOffer .investment").val(num(montoOferta + comission));
-      $("#calcOffer .profits").val(num(profits));
-      $("#calcOffer .comission").val(num(comission));
-      $("#calcOffer .margin").val(num(margin));
+      $("#calcOffer .offer").val('$' + num(montoOferta));
+      $("#calcOffer .investment").val('$' + num(montoOferta + comission));
+      $("#calcOffer .profits").val('$' + num(profits));
+      $("#calcOffer .comission").val('$' + num(comission));
+      $("#calcOffer .margin").val('$' + num(margin));
     } else {
       // Limpiar campos si los valores son inválidos
       $("#calcOffer .offer, #calcOffer .profits, #calcOffer .comission, #calcOffer .margin").val('');
