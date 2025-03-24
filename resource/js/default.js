@@ -1,5 +1,5 @@
 // const URL_BASE = 'http://'+window.location.hostname + "/chequeado/"; 
-const URL_BASE = "https://MartinezK97.github.io/chequeadoHome/";
+const URL_BASE = "https://MartinezK97.github.io/chequeadoDemo/";
 
 
 const COMISSION = 0.21;
